@@ -1,3 +1,21 @@
+@font-face {
+  font-family: 'Exo 2.0';
+  src: url('../public/fonts/Exo20-Thin.eot');
+  src: url('../public/fonts/Exo20-Thin.eot?#iefix') format('embedded-opentype'),
+    url('../public/fonts/Exo20-Thin.woff2') format('woff2'),
+    url('../public/fonts/Exo20-Thin.woff') format('woff'),
+    url('../public/fonts/Exo20-Thin.ttf') format('truetype'),
+    url('../public/fonts/Exo20-Thin.svg#Exo2.0-Thin') format('svg');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: 'Exo 2.0';
+  font-size: 16px;
+}
+
 .App {
   text-align: center;
 }
@@ -13,16 +31,23 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
+.container {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 26px;
+}
+
+.cat_food__container {
+  background: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0) 50%, #000000 100%), url(../public/img/background.jpg);
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
 }
+
 
 .App-link {
   color: #61dafb;
@@ -32,6 +57,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }

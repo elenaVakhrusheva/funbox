@@ -1,0 +1,111 @@
+ 
+
+/* === карточка === */
+
+.foodItem {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  height: 480px;
+  width: 320px;
+  overflow: hidden; 
+  box-sizing: border-box;
+  text-align: left;
+  border-radius: 12px;
+  clip-path: polygon(16% 0, 100% 0, 100% 100%, 0 100%, 0% 13%);
+  -webkit-clip-path: polygon(16% 0, 100% 0, 100% 100%, 0 100%, 0% 13%);
+}
+
+.border {
+filter: 
+drop-shadow(0px 0px 0px #1698d9) drop-shadow(-4px 0px 0px #1698d9) drop-shadow(0px 2px 0px #1698d9) drop-shadow(0px 0px 0px #1698d9) drop-shadow(0px 2px 0px #1698d9) drop-shadow(-2px 0px 0px #1698d9) drop-shadow(0px 2px 0px #1698d9) drop-shadow(4px -4px 0px #1698d9);
+}
+
+.border:hover {
+  filter: 
+drop-shadow(0px 0px 0px #d91667) drop-shadow(-4px 0px 0px #d91667) drop-shadow(0px 2px 0px #d91667) drop-shadow(0px 0px 0px #d91667) drop-shadow(0px 2px 0px #d91667) drop-shadow(-2px 0px 0px #d91667) drop-shadow(0px 2px 0px #d91667) drop-shadow(4px -4px 0px #d91667);
+}
+
+
+
+.description {
+  padding: 20px 45px;
+  position: relative;
+} 
+
+/* === характеристики карточки === */
+.titleFood {
+  font-size: 1rem;
+  color: #666666;
+}
+
+.nameBrand {
+  font-size: 3rem;
+  color: #000000;
+  font-weight: 700;
+  line-height: 0.7;
+  margin: 1.25rem 0;
+}
+
+.taste {
+  font-size: 1.5rem;
+  color: #000000;
+  font-weight: bold;
+}
+
+.portion {
+  margin-top: 20px;
+}
+
+.portion,
+.present {
+  font-size: 0.8rem;
+  line-height: 1rem;
+  color: #666666;
+  font-weight: bold;
+}
+
+.img {
+  top: 20px;
+  position: relative;
+  right: 80px;
+}
+
+.weight {
+  font-size: 42px;
+  line-height: 22px;
+  color: #ffffff;
+  font-family: "Trebuchet MS";
+  text-align: center;
+  border-radius: 40px;
+  background-color: #1698d9;
+  width: 5rem;
+  height: 5rem;
+  line-height: 1.8rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: end;
+  position: absolute;
+  bottom: 100px;
+  right: 10px;
+  z-index: 10;
+}
+
+.border:hover .weight {
+    background-color: #d91667;
+}
+
+.weightUnit {
+  font-size: 21px;
+}
+
+.subscrible {
+  font-size: 13px;
+  line-height: 16px;
+  color: #ffffff; 
+  text-align: center;
+  margin-top: 17px;
+}
+
+
