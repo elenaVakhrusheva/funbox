@@ -1,16 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import s from "./style.module.css";
 import cat from "./cat.png"
 // import food from "../../food.json"
 
 
-const FoodItem = ({ food = [], item , text, setText, description }) => {
-
+const FoodItem = ({ food = [], item/* , text, setText, description */ }) => {
+  let description = <p>Чего сидишь? Порадуй котэ, <a href="#">купи.</a></p>;
+  const [text, setText] = useState(description);
   return (
     <>
       <div className={s.card__wrapp}
         key={food.id}  
         onMouseEnter={() => setText(food.subscrible)}
+        
         onMouseLeave={() => setText(description)} >
         <div className={s.border}>
           <div className={s.foodItem}>

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import s from "./style.module.css";
 //import cat from "./cat.png"
 import FoodItem from "../FoodItem/FoodItem";
@@ -16,7 +16,7 @@ const FoodList = () => {
       "presentSubscrible": " ",
       "image": "",
       "weight": "0,5",
-      "subscrible": "то всего лишь паштет из печени утки или гуся"
+      "subscrible": "Это всего лишь паштет из печени утки или гуся"
     },
     {
       "id": 2,
@@ -44,8 +44,11 @@ const FoodList = () => {
     }
   ]
   
-  let description = <p>Чего сидишь? Порадуй котэ, <a href="#">купи.</a></p>;
-  const [text, setText] = useState(description);
+
+  
+/*   const handleClick = event => {
+    console.log(event.currentTarget.id);
+  }; */
 
   return (
     <>
@@ -53,17 +56,29 @@ const FoodList = () => {
         <div className="container">
           <h1>Ты сегодня покормил кота?</h1>
           <div className={s.foodList}>
-            {data?.map((food, item) => (
+           {data?.map((food, item) => (
              
                 <FoodItem  
-                  text={text}
+                  /* text={text}
                   setText={setText}
+               description={description}  */
                   food={food}
                   item={item}
-                  description={description}/>
+                  
+               />
+               
               
-            ))}
+            ))} 
           </div>
+         {/*  <button id="my-btn" onClick={handleClick}>
+            Click 1
+          </button>
+          <button id="my-btn2" onClick={handleClick}>
+            Click 2
+          </button>
+          <button id="my-btn3" onClick={handleClick}>
+            Click 3
+          </button> */}
         </div>
       </div>
     </>
