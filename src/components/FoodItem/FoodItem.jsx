@@ -5,35 +5,39 @@ import cat from "./cat.png"
 
 
 const FoodItem = ({ food = [], item/* , text, setText, description */ }) => {
-  let description = <p>Чего сидишь? Порадуй котэ, <a href="#">купи.</a></p>;
+  let description = <div>Чего сидишь? Порадуй котэ, <a href="#">купи.</a></div>;
   const [text, setText] = useState(description);
   return (
     <>
       <div className={s.card__wrapp}
-        key={food.id}  
-        onMouseEnter={() => setText(food.subscrible)}
-        
-        onMouseLeave={() => setText(description)} >
-        <div className={s.border}>
-          <div className={s.foodItem}>
-            <div className={s.description}>
-              <span className={s.titleFood}>{food.title}</span>
-              <h2 className={s.nameBrand}>
-                {food.nameBrand} <br /><span className={s.taste}>{food.taste}</span>
-              </h2>
-              <p className={s.portion}>{food.portion}</p>
-              <p className={s.present}>{food.present}</p>
-              <p className={s.present}>{food.presentSubscrible}</p>
-              <div className={s.weight}>
-                {food.weight}
-                <span className={s.weightUnit}>кг</span>
+        key={food.id}      
+      >
+        <div className={s.wrapper} 
+          onMouseEnter={() => setText(food.subscrible)}
+          onMouseLeave={() => setText(description)}>
+
+          <div className={s.border}>
+            <div className={s.foodItem}>
+              <div className={s.description}>
+                <span className={s.titleFood}>{food.title}</span>
+                <h2 className={s.nameBrand}>
+                  {food.nameBrand} <br /><span className={s.taste}>{food.taste}</span>
+                </h2>
+                <p className={s.portion}>{food.portion}</p>
+                <p className={s.present}>{food.present}</p>
+                <p className={s.present}>{food.presentSubscrible}</p>
+                <div className={s.weight}>
+                  {food.weight}
+                  <span className={s.weightUnit}>кг</span>
+                </div>
               </div>
-              <img src={cat} className={s.img} alt="cat" />
             </div>
           </div>
+          <img src={cat} className={s.img} alt="cat" />
         </div>
+
         <div className={s.subscrible}>
-        <div>{text}</div>
+          <div>{text}</div>
         </div>
       </div>
     </>

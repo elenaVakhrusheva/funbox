@@ -1,4 +1,4 @@
- 
+
 
 /* === карточка === */
 
@@ -6,32 +6,44 @@
   display: flex;
   flex-direction: column;
   background: #fff;
-  height: 480px;
-  width: 320px;
-  overflow: hidden; 
+  height: 471px;
+  width: 312px;
+  overflow: hidden;
   box-sizing: border-box;
   text-align: left;
+  border-radius: 5px;
+  clip-path: polygon(12% 0, 100% 0, 100% 100%, 0 100%, 0% 8%);
+  -webkit-clip-path: polygon(12% 0, 100% 0, 100% 100%, 0 100%, 0% 8%);
+}
+
+.wrapper {
+  position: relative;
+  overflow: hidden;
   border-radius: 12px;
-  clip-path: polygon(16% 0, 100% 0, 100% 100%, 0 100%, 0% 13%);
-  -webkit-clip-path: polygon(16% 0, 100% 0, 100% 100%, 0 100%, 0% 13%);
 }
 
 .border {
-filter: 
+filter:
 drop-shadow(0px 0px 0px #1698d9) drop-shadow(-4px 0px 0px #1698d9) drop-shadow(0px 2px 0px #1698d9) drop-shadow(0px 0px 0px #1698d9) drop-shadow(0px 2px 0px #1698d9) drop-shadow(-2px 0px 0px #1698d9) drop-shadow(0px 2px 0px #1698d9) drop-shadow(4px -4px 0px #1698d9);
+
+  margin: 5px;
+  border-radius: 8px;
+  overflow: hidden;
 }
 
 .border:hover {
-  filter: 
+  filter:
 drop-shadow(0px 0px 0px #d91667) drop-shadow(-4px 0px 0px #d91667) drop-shadow(0px 2px 0px #d91667) drop-shadow(0px 0px 0px #d91667) drop-shadow(0px 2px 0px #d91667) drop-shadow(-2px 0px 0px #d91667) drop-shadow(0px 2px 0px #d91667) drop-shadow(4px -4px 0px #d91667);
 }
 
 
 
 .description {
-  padding: 20px 45px;
+  padding: 17px 45px;
   position: relative;
-} 
+  overflow: hidden;
+  height: 100%;
+}
 
 /* === характеристики карточки === */
 .titleFood {
@@ -43,8 +55,8 @@ drop-shadow(0px 0px 0px #d91667) drop-shadow(-4px 0px 0px #d91667) drop-shadow(0
   font-size: 3rem;
   color: #000000;
   font-weight: 700;
-  line-height: 0.7;
-  margin: 1.25rem 0;
+  line-height: 0.65;
+  margin: 1rem 0;
 }
 
 .taste {
@@ -53,22 +65,24 @@ drop-shadow(0px 0px 0px #d91667) drop-shadow(-4px 0px 0px #d91667) drop-shadow(0
   font-weight: bold;
 }
 
-.portion {
-  margin-top: 20px;
-}
 
 .portion,
 .present {
   font-size: 0.8rem;
-  line-height: 1rem;
+  line-height: 1.1rem;
   color: #666666;
   font-weight: bold;
+  margin: 0px;
+}
+.portion {
+  margin-top: 1.3rem;
 }
 
 .img {
-  top: 20px;
-  position: relative;
-  right: 80px;
+  position: absolute;
+    bottom: -88px;
+    left: -24px;
+  pointer-events: none;
 }
 
 .weight {
@@ -77,18 +91,18 @@ drop-shadow(0px 0px 0px #d91667) drop-shadow(-4px 0px 0px #d91667) drop-shadow(0
   color: #ffffff;
   font-family: "Trebuchet MS";
   text-align: center;
-  border-radius: 40px;
+  border-radius: 50%;
   background-color: #1698d9;
   width: 5rem;
   height: 5rem;
-  line-height: 1.8rem;
+  line-height: 2rem;
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: end;
   position: absolute;
-  bottom: 100px;
-  right: 10px;
+    bottom: 10px;
+    right: 12px;
   z-index: 10;
 }
 
@@ -103,7 +117,7 @@ drop-shadow(0px 0px 0px #d91667) drop-shadow(-4px 0px 0px #d91667) drop-shadow(0
 .subscrible {
   font-size: 13px;
   line-height: 16px;
-  color: #ffffff; 
+  color: #ffffff;
   text-align: center;
   margin-top: 17px;
 }

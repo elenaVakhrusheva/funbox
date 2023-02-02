@@ -1,6 +1,5 @@
 import React from "react";
 import s from "./style.module.css";
-//import cat from "./cat.png"
 import FoodItem from "../FoodItem/FoodItem";
 
 
@@ -43,12 +42,6 @@ const FoodList = () => {
       "subscrible": "Влажные корма с курицей из натурального сырья"
     }
   ]
-  
-
-  
-/*   const handleClick = event => {
-    console.log(event.currentTarget.id);
-  }; */
 
   return (
     <>
@@ -56,29 +49,12 @@ const FoodList = () => {
         <div className="container">
           <h1>Ты сегодня покормил кота?</h1>
           <div className={s.foodList}>
-           {data?.map((food, item) => (
-             
+           {data?.map((food, item) => (             
                 <FoodItem  
-                  /* text={text}
-                  setText={setText}
-               description={description}  */
                   food={food}
-                  item={item}
-                  
-               />
-               
-              
+                  item={item} />
             ))} 
           </div>
-         {/*  <button id="my-btn" onClick={handleClick}>
-            Click 1
-          </button>
-          <button id="my-btn2" onClick={handleClick}>
-            Click 2
-          </button>
-          <button id="my-btn3" onClick={handleClick}>
-            Click 3
-          </button> */}
         </div>
       </div>
     </>

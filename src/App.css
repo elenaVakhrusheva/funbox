@@ -37,8 +37,9 @@ body {
 }
 
 h1 {
-  font-size: 36px;
-  margin-bottom: 26px;
+    font-size: 36px;
+    margin-bottom: 14px;
+    line-height: 1.7;
 }
 
 .cat_food__container {
