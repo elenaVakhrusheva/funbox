@@ -1,3 +1,10 @@
+h1 {
+    font-family: 'Exo 2.0';
+    font-size: 36px;
+    margin-bottom: 14px;
+    line-height: 1.7;
+}
+
 .foodList { 
   display: flex;
   flex-direction: row;
@@ -5,4 +12,21 @@
   justify-content: space-between;
   flex-wrap: wrap;
   row-gap: 40px;
+}
+
+
+@media (max-width:768px) {
+  .foodList {
+    justify-content: space-around;
+  }  
+}
+
+@media (max-width:425px) {
+  .foodList {
+    justify-content: center;
+  }  
+  h1 {
+    margin-bottom: 24px;
+    line-height: 1;
+  }
 }

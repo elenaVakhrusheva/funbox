@@ -15,7 +15,8 @@ const FoodList = () => {
       "presentSubscrible": " ",
       "image": "",
       "weight": "0,5",
-      "subscrible": "Это всего лишь паштет из печени утки или гуся"
+      "subscrible": "Это всего лишь паштет из печени утки или гуся",
+      "available": true
     },
     {
       "id": 2,
@@ -27,7 +28,8 @@ const FoodList = () => {
       "presentSubscrible": " ",
       "image": "../img/cat.png",
       "weight": "2",
-      "subscrible": "Головы щучьи с чесноком да свежайшая сёмгушка."
+      "subscrible": "Головы щучьи с чесноком да свежайшая сёмгушка",
+      "available": true
     },
     {
       "id": 3,
@@ -39,7 +41,8 @@ const FoodList = () => {
       "presentSubscrible": "заказчик доволен",
       "image": "./public/img/cat.png",
       "weight": "1",
-      "subscrible": "Влажные корма с курицей из натурального сырья"
+      "subscrible": "Влажные корма с курицей из натурального сырья",
+      "available": false
     }
   ]
 
@@ -47,12 +50,12 @@ const FoodList = () => {
     <>
       <div className="cat_food__container">
         <div className="container">
-          <h1>Ты сегодня покормил кота?</h1>
+          <h1 className="h1">Ты сегодня покормил кота?</h1>
           <div className={s.foodList}>
            {data?.map((food, item) => (             
-                <FoodItem  
-                  food={food}
-                  item={item} />
+              <FoodItem  
+                food={food}
+                item={item} />
             ))} 
           </div>
         </div>

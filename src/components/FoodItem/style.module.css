@@ -1,5 +1,10 @@
 
 
+body {
+  font-family: 'Trebuchet MS';
+  font-size: 16px;
+}
+
 /* === карточка === */
 
 .foodItem {
@@ -57,6 +62,7 @@ drop-shadow(0px 0px 0px #d91667) drop-shadow(-4px 0px 0px #d91667) drop-shadow(0
   font-weight: 700;
   line-height: 0.65;
   margin: 1rem 0;
+  letter-spacing: 1px;
 }
 
 .taste {
@@ -73,9 +79,11 @@ drop-shadow(0px 0px 0px #d91667) drop-shadow(-4px 0px 0px #d91667) drop-shadow(0
   color: #666666;
   font-weight: bold;
   margin: 0px;
+  letter-spacing: 1.1px;
 }
 .portion {
-  margin-top: 1.3rem;
+  margin-top: 1.35rem;
+  
 }
 
 .img {
@@ -99,10 +107,10 @@ drop-shadow(0px 0px 0px #d91667) drop-shadow(-4px 0px 0px #d91667) drop-shadow(0
   display: flex;
   align-items: center;
   flex-direction: column;
-  justify-content: end;
+  justify-content:  flex-end;
   position: absolute;
-    bottom: 10px;
-    right: 12px;
+  bottom: 16px;
+  right: 17px;
   z-index: 10;
 }
 
@@ -119,7 +127,11 @@ drop-shadow(0px 0px 0px #d91667) drop-shadow(-4px 0px 0px #d91667) drop-shadow(0
   line-height: 16px;
   color: #ffffff;
   text-align: center;
-  margin-top: 17px;
+  margin-top: 14px;
 }
 
-
+.link {
+  color: #1698d9;
+  text-decoration: none;
+  border-bottom: 1px dashed #1698d9;
+}
