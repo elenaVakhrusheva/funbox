@@ -141,6 +141,10 @@ body {
   background-color: #d91667;
 }
 
+.weightDisable {
+  background-color: #b3b3b3;
+}
+
 .weightUnit {
   font-size: 21px;
 }

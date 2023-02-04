@@ -42,7 +42,7 @@ const FoodItem = ({ food = [], item, avai }) => {
     <>
       <div className={s.card__wrapp} key={food.id}>
         <div className={s.wrapper} onClick={handleClick} /* unavailableItem={unavailableItem} */>
-          <div className={isActive ? s.itemDisable : s.itemActive} >
+          <div className={isActive ? s.border : s.itemActive} >
             <div className={s.foodItem}>
               <div className={s.description}>
                 <span className={s.titleFood}>{food.title}</span>
