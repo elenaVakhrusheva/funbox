@@ -46,6 +46,14 @@ const FoodList = () => {
     }
   ]
 
+  //const avai = data.indexOf("available") > -1
+  //console.log(avai); //true
+
+  const avai = data.map(x => x.available)
+  //if (avai !== true) { console.log("это ложь available")}
+  //console.log(result + "Значения ключей available") ;
+  console.log(avai)
+ 
   return (
     <>
       <div className="cat_food__container">
@@ -55,7 +63,8 @@ const FoodList = () => {
            {data?.map((food, item) => (             
               <FoodItem  
                 food={food}
-                item={item} />
+                item={item}
+               avai={avai} />
             ))} 
           </div>
         </div>
