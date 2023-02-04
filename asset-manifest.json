@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.4c38fddc.css",
-    "main.js": "./static/js/main.0a8be450.js",
+    "main.css": "./static/css/main.92072a6f.css",
+    "main.js": "./static/js/main.637ff1da.js",
     "static/media/background.jpg": "./static/media/background.ca2d3202961d141f20cf.jpg",
     "static/media/Exo20-Thin.svg": "./static/media/Exo20-Thin.b6da0fb0ae77605dab8b.svg",
     "static/media/cat.png": "./static/media/cat.a1761efbdaa90e1c1269.png",
@@ -15,11 +15,11 @@
     "static/media/Exo20-Thin.woff": "./static/media/Exo20-Thin.b38cd4b4798149f7ebdf.woff",
     "static/media/Exo20-Thin.woff2": "./static/media/Exo20-Thin.821629ffb367d2dddc98.woff2",
     "index.html": "./index.html",
-    "main.4c38fddc.css.map": "./static/css/main.4c38fddc.css.map",
-    "main.0a8be450.js.map": "./static/js/main.0a8be450.js.map"
+    "main.92072a6f.css.map": "./static/css/main.92072a6f.css.map",
+    "main.637ff1da.js.map": "./static/js/main.637ff1da.js.map"
   },
   "entrypoints": [
-    "static/css/main.4c38fddc.css",
-    "static/js/main.0a8be450.js"
+    "static/css/main.92072a6f.css",
+    "static/js/main.637ff1da.js"
   ]
 }
