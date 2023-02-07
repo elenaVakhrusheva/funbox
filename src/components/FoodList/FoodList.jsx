@@ -46,13 +46,8 @@ const FoodList = () => {
     }
   ]
 
-  //const avai = data.indexOf("available") > -1
-  //console.log(avai); //true
 
-  const avai = data.map(x => x.available)
-  //if (avai !== true) { console.log("это ложь available")}
-  //console.log(result + "Значения ключей available") ;
-  console.log(avai)
+  
  
   return (
     <>
@@ -63,8 +58,7 @@ const FoodList = () => {
            {data?.map((food, item) => (             
               <FoodItem  
                 food={food}
-                item={item}
-               avai={avai} />
+                key={food.id}/>
             ))} 
           </div>
         </div>
